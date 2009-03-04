@@ -1,0 +1,5 @@
+category: Audio OCaml
+requires: cygwin libgavl1 libgavl-devel ocaml
+sdesc: "OCaml speex bindings"
+ldesc: "This package contains an O'Caml interface for the Gmerlin Audio 
+Video Library, otherwise known as gavl."
