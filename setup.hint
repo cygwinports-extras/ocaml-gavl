@@ -1,5 +1,0 @@
-category: Audio OCaml
-requires: libgavl1 libgavl-devel ocaml-base
-sdesc: "OCaml Gavl bindings"
-ldesc: "This package contains an O'Caml interface for the Gmerlin Audio 
-Video Library, otherwise known as gavl."

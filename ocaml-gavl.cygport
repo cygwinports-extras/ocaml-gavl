@@ -1,0 +1,19 @@
+inherit ocaml
+
+NAME="ocaml-gavl"
+VERSION=0.1.4
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="OCaml Gavl bindings"
+DESCRIPTION="This package contains an O'Caml interface for the Gmerlin Audio
+Video Library, otherwise known as gavl."
+HOMEPAGE="http://savonet.sourceforge.net/"
+SRC_URI="mirror://sourceforge/savonet/${NAME}-${VERSION}.tar.gz"
+PATCH_URI="0.1.4-vpath.patch"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygconf
+	cygmake -j1
+}
